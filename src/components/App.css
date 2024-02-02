@@ -1,0 +1,78 @@
+/* Importar la fuente Roboto de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* App.css */
+
+/* Reset básico para estilos de navegador */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente Roboto aplicada */
+  background-color: #f4f7f6; /* Color de fondo suave */
+  color: #333; /* Color de texto principal */
+  line-height: 1.6;
+}
+
+.wall-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: none; /* Eliminar si prefieres un diseño sin bordes */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  background: #fff; /* Fondo blanco para el área de contenido */
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  background: #f9f9f9; /* Fondo ligeramente diferente para cada mensaje */
+}
+
+/* Último mensaje sin borde inferior */
+.message:last-child {
+  border-bottom: none;
+}
+
+.input-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Bordes redondeados para el área de texto */
+  height: 100px; /* Altura fija para el área de texto */
+  resize: none; /* Deshabilitar redimensionamiento */
+}
+
+button {
+  background-color: #5cb85c; /* Color de fondo para el botón */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #4cae4c; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .wall-container, .input-container {
+    width: 90%;
+    padding: 10px;
+  }
+}
